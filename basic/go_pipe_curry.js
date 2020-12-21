@@ -1,4 +1,4 @@
-const { reduce, map, filter } = require('../lib/fx');
+const { reduce, map, filter } = require('../lib/fx_node');
 
 const products = [
   { name: '반팔티', price: 15000 },
