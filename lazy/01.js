@@ -1,4 +1,4 @@
-const { reduce, go, curry } = require('../lib/fx_node');
+const { reduce, go, curry, filter } = require('../lib/fx_node');
 
 const add = (a, b) => a + b;
 
@@ -34,7 +34,7 @@ L.range = function* (l) {
 
 const lazyRange5 = L.range(5);
 
-console.log(lazyRange5); // 이터레이터가 리턴되었고 아직 평가되지 않았따.
+console.log(lazyRange5); // 이터레이터가 리턴되었고 아직 평가되지 않았다.
 
 console.log(reduce(add, lazyRange5));
 
